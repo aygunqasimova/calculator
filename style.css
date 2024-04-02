@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+     
+html {
+    font-size: 10px;
+}
+
+
+body {
+  font-size: 12px;
+}
+
+.calculator {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 400px;
+  position: absolute;
+  
+}
+
+.calculator-input {
+  width: 100%;
+  font-size: 30px;
+  height: 60px;
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button {
+  height: 35px;
+  background-color: white;
+  border: 1px solid rgb(74, 68, 68);
+  border-radius: 3px;
+  background-color: transparent;
+  font-size: 20px;
+  color: black
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 1fr-her bir elemeti beraber shekilde genishlendirir  */
+  grid-gap: 10px;
+  padding: 2px;
+  
+}
+
+.equal {
+    background-color: orange;
+    height: 100%;
+    grid-area: 2/4/6/5;   /* elementleri mueyyen bir sahede yerleshdirmek uchun */
+}
+
+.operator{
+    background-color: rgb(195, 191, 191);
+}
+
+.calculator-keys :hover, .operator :hover{
+  background-color: antiquewhite;
+}
